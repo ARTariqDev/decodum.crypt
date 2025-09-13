@@ -50,11 +50,11 @@ function App() {
 
       <div 
         className="cryptic-box" 
-        style={{ backgroundImage: `url(${cryptImg})` }}
+        style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)', border: '2px solid #ff8ad' }}
       >
         <h1 className="glitch" data-text="I miss you a lot...">I miss you a lot...</h1>
         <br />
-        Code: 0x0A13F<span className={`blinking-cursor ${cursorVisible ? 'visible' : 'hidden'}`}>_</span>
+        Hash: d077f244def8a70e5ea758bd8352fcd8<span className={`blinking-cursor ${cursorVisible ? 'visible' : 'hidden'}`}>_</span>
         <div className="sys-counter">
           SYS:{counter.toString(16).toUpperCase().padStart(2, '0') + ":: Hope you're excited for Decodum!!"}
         </div>
@@ -75,8 +75,15 @@ function App() {
         ))}
       </div>
 
-      <div className="corner-watermark">
-        [ SYS-LOCK v1.3 :: 1989 DECODER ACTIVE]
+      <div className="corner-watermark text-[#fff8de]">
+        [ SYS-LOCK v1.3 :: 1989 DECODER ACTIVE :: By  
+        <a 
+          href="https://github.com/ARTariqDev" 
+          className="no-underline text-[#fff8de]"
+        >
+          Abdur Rehman Tariq
+        </a> 
+        & the Decodum Team]
       </div>
     </div>
   );
